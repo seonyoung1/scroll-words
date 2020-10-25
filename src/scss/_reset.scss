@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css');
+//@import url('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css');
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,13 +31,13 @@ body {
     line-height:1.4;
     -webkit-font-smoothing:antialiased;
     color:$black;
-    @include vw-font-size-pc(17);
+    //@include vw-font-size-pc(17);
     //@media (max-width: 1024px){
     //    @include vw-font-size-tb(15);
     //}
-    @media (max-width: 768px){
-        @include vw-font-size-mo(14);
-    }
+    //@media (max-width: 768px){
+    //    @include vw-font-size-mo(14);
+    //}
 }
 
 h1, h2, h3, h4, h5{

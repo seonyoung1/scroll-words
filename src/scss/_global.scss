@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body {
+    font:18px 'Rubik', Arial, sans-serif; letter-spacing:-0.01em; line-height:1.4; -webkit-font-smoothing : antialiased;
+    color:#000;
+}
+
+#header{
+    width:100%;height:122px;background-color:#fff;position:fixed;left:0;top:0;z-index:100;
+}
+#header > div{
+    padding:0 40px;margin:0 auto;max-width:1360px;display:flex;align-items:center;justify-content:space-between;height:100%;
+}
+#header .logo{
+    max-width:400px;height:64px;
+}
+#header .logo svg{
+    height:100%;
+}
+#header .button button{
+    width:40px;height:40px;position:relative;font-size:0;background:transparent;border:0;margin-left:10px;cursor:pointer;
+}
+#header .button button:after{
+    content: "";position: absolute;left: 50%;top: 50%;width: 30px;height: 30px;background: url(../images/icons_pc.png) no-repeat;transform:translate(-50%,-50%);
+}
+#header .button .locate:after{
+    background-position: 1px 1px;
+}
+#header .button .search:after{
+    background-position: -29px 1px;
+}
+#header .button .search:hover:after{
+    background-position:-179px 1px;
+}
+#header .button .locate:hover:after{
+    background-position:-149px 1px;
+}
+
+@media (max-width: 1024px){
+    #header{
+        height:74px;
+    }
+    #header > div{
+        padding:0 20px;
+    }
+    #header .logo{
+        max-width:170px;height:41px;
+    }
+}
+
+#wrapper{position:relative;width:100%;padding-top:122px;}
+
+.main_title{font-size:24px;font-weight:500;color:#000;text-transform:uppercase;}
+.route{display:inline-block;margin-bottom:30px;font-size:30px;letter-spacing:0; word-spacing:0;color:#000;font-weight:500;border-bottom:3px solid #dae6f4;}
+.route .now{color:#2963ad;}
+
+#container:not(.main_page){background-color:#f6f6f6;padding:32px 40px;}
+#container:not(.main_page) #content{position:relative;max-width:1280px;margin:0 auto;padding:50px 140px;background-color:#fff;border-radius:24px; min-height:calc(100vh - 122px - 64px);}
+.route{display:inline-block;margin-bottom:30px;font-size:30px;letter-spacing:0; word-spacing:0;color:#000;font-weight:500;border-bottom:3px solid #dae6f4;}
+.route .now{color:#2963ad;}
+
+@media (max-width:1340px) {
+    #container:not(.main_page) #content{padding-left:40px;padding-right:40px;}
+}
+/**GNB Mediaquery**/
+@media (max-width:1024px) {
+    #wrapper{padding-top:74px}
+    #container:not(.main_page){padding-top:20px;padding-left:20px;padding-right:20px;}
+    #container:not(.main_page) #content{padding-left:20px;padding-right:20px; min-height:calc(100vh - 74px - 20px);}
+}
+@media (max-width:768px) {
+    .main_title{font-size:18px;padding-right:0;}
+    .route{margin-bottom:20px;font-size:18px;border-bottom-width:2px;}
+    #container:not(.main_page) #content{padding:30px 20px;}
+}
+@media (max-width:480px) {
+    #container:not(.main_page){padding:13px 13px 25px 13px;}
+}

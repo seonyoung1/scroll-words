@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Rubik';
+    src: url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Regular.eot'); /* IE9 Compat Modes */
+    src: url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Regular.woff') format('woff'), /* Modern Browsers */
+    url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Medium.eot'); /* IE9 Compat Modes */
+    src: url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Medium.woff') format('woff'), /* Modern Browsers */
+    url('https://img.global.news.samsung.com/image/rubik_font/Rubik-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font:18px 'Rubik', Arial, sans-serif; letter-spacing:-0.01em; line-height:1.4; -webkit-font-smoothing : antialiased;
+    color:#000;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, caption, form, fieldset, legend, input {margin:0; padding:0;}
+table {border-collapse:collapse;border:0 none;}
+img, fieldset {border:0;}
+ul, ol, li{list-style-type:none;}
+li img{vertical-align:top;}
+
+#wrapper{
+    padding-top:140px;padding-bottom:100px;
+}
+#header{
+    width:100%;height:122px;background-color:#fff;position:fixed;left:0;top:0;z-index:100;
+}
+#header > div{
+    padding:0 40px;margin:0 auto;max-width:1360px;display:flex;align-items:center;justify-content:space-between;height:100%;
+}
+#header .logo{
+    max-width:400px;height:64px;
+}
+#header .logo svg{
+    height:100%;
+}
+#header .button button{
+    width:40px;height:40px;position:relative;font-size:0;background:transparent;border:0;margin-left:10px;cursor:pointer;
+}
+#header .button button:after{
+    content: "";position: absolute;left: 50%;top: 50%;width: 30px;height: 30px;background: url(./images/icons_pc.png) no-repeat;transform:translate(-50%,-50%);
+}
+#header .button .locate:after{
+    background-position: 1px 1px;
+}
+#header .button .search:after{
+    background-position: -29px 1px;
+}
+#header .button .search:hover:after{
+    background-position:-179px 1px;
+}
+#header .button .locate:hover:after{
+    background-position:-149px 1px;
+}
+@media (max-width: 768px){
+    #wrapper{
+        padding-top:80px;
+    }
+    #header{
+        height:74px;
+    }
+    #header > div{
+        padding:0 20px;
+    }
+    #header .logo{
+        max-width:170px;height:41px;
+    }
+}
